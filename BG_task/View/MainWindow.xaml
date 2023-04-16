@@ -1,0 +1,25 @@
+﻿<Window x:Class="BG_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BG_task"
+        mc:Ignorable="d"
+        Title="Top 10 Objects" Height="450" Width="800"
+        Background="#F7F7F7">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Content="Top 10" Click="TopTenPageClicked" />
+            <Button Content="Details" Click="DetailsPageClicked" />
+        </StackPanel>
+        <Frame x:Name="NavigationFrame"  NavigationUIVisibility="Hidden" Grid.RowSpan="2" />
+    </Grid>
+
+</Window>
